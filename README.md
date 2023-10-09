@@ -7,24 +7,26 @@
     <p>
       I have created and developed a new library called (joscript) that simplifies JavaScript code so that developing and building websites is easier than would be           possible with JavaScript alone
     </p>
-    <pre>
-        <code>
-           import { jo } from "../../joscript/joScript.js";
 
-          
- function App() {let load = window.onload = () => {
-          return(
-              jo('div', {class:'app ', id:'app' ,children:[
-      
-  jo('h1', {class:'h1', text:'Welcome to joscript', }),
-      
-  ]})
-          )
+```jsx
+import { jo } from "../../joscript/joScript.js";
+
+
+
+function App() {let load = window.onload = () => {
+
+    return(
+        jo('div', {class:'app ', id:'app' ,children:[
+
+        jo('h1', {text:'Welcome to joscript', id:'x'},{height:'100px', color:'#383D45'}),
+            jo('img', {src:'/src/App/joScript-logo.svg'})
+
+        ]})
+    )
 
 };return load()}
 export default App;
-        </code>
-    </pre>
+```
    
 
   </div>
